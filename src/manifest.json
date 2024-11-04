@@ -1,5 +1,5 @@
 {
-    "manifest_version": 3,
+    "manifest_version": 2,
     "name": "Custom New Tab Redirect",
     "version": "1.0",
     "description": "Redirects new tab to a custom URL and clears the address bar.",
@@ -12,7 +12,16 @@
       "open_in_tab": true
     },
     "background": {
-      "service_worker": "background.js"
+      "scripts": ["background.js"]
+    },
+    "icons": {
+      "48": "icons/icon.svg",
+      "96": "icons/icon.svg"
+    },
+    "applications": {
+      "gecko": {
+        "id": "firefox-extension@custom-new-tab-redirect"
+      }
     }
   }
   
