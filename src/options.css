@@ -1,0 +1,89 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 2em;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    width: max(66vw, 350px);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+  }
+  
+  input[type="text"] {
+    padding: 0.5em;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1em;
+  }
+  
+  button {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Light Theme */
+  @media (prefers-color-scheme: light) {
+    body {
+      background-color: #ffffff;
+      color: #333333;
+    }
+    .card {
+      background-color: #ffffff;
+      color: #333333;
+    }
+    input[type="text"] {
+      background-color: #ffffff;
+      color: #333333;
+    }
+    button {
+      background-color: #4CAF50;
+      color: #ffffff;
+    }
+  }
+  
+  /* Dark Theme */
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #1e1e1e;
+      color: #f1f1f1;
+    }
+    .card {
+      background-color: #2b2b2b;
+      color: #f1f1f1;
+    }
+    input[type="text"] {
+      background-color: #3a3a3a;
+      color: #f1f1f1;
+      border: 1px solid #555555;
+    }
+    button {
+      background-color: #4CAF50;
+      color: #ffffff;
+    }
+  }
+  

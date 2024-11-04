@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Custom New Tab Redirect",
+    "version": "1.0",
+    "description": "Redirects new tab to a custom URL and clears the address bar.",
+    "permissions": ["storage", "tabs"],
+    "chrome_url_overrides": {
+      "newtab": "redirect.html"
+    },
+    "options_ui": {
+      "page": "options.html",
+      "open_in_tab": true
+    },
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
+  
